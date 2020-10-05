@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        {{#each restaurants}}
+        <div class="col-4">
+
+            <div class="container-sm">
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="{{this.imageURL}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{this.name}}</h5>
+                            <p class="card-text">{{this.type}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <style>
+        .card {
+            margin: 20px;
+        }
+    </style>
